@@ -16,6 +16,9 @@ Além disso, mesmo já tendo um pouco de experiência mexendo com arquivos json 
 Utilizei o Docker pela primeira vez e aprendi a sua funcionalidade e utilidade para projetos como esse. Nunca me preocupei com a portabilidade de aplicações já que não é algo necessário na maioria dos projetos da faculdade.
 
 # Dificuldades:
+As principais dificuldades estavam no uso do Docker. Tive que debuggar bastante as files Docker e também fiquei confuso algumas vezes em como buildar e rodar meu código no Docker.
+Para a implementação dos arquivos do API e runner também não foi trivial fazer a lógica e conexão entre eles. Por isso, foi essencial o uso de IA nesse momento para eu conseguir concluir.
+A questão do tempo. O prazo não era curto, então, peço desculpas pela demora da entrega. Apenas consegui trabalhar nisso (incluindo os exercícios do Golings) na segunda-feira, dia 14, e quarta-feira, dia 16. 
 
 # Compilação e execução:
 1.**Clonar o repositório**: 
