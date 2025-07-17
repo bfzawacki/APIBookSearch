@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  # Go API Server
+  api-server:
+    build:
+      context: .
+      dockerfile: ./docker/api.Dockerfile
+    ports:
+      - "3000:3000" # Expose port 3000 to your local machine
+
+  # Python requester
+  client:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.python
+    environment:
+      # Tell the Python script the address of the Go API server
+      - API_URL=http://api-server:3000/api/search
+    depends_on:
+      - api-server # Wait for the api-server to be healthy before starting
