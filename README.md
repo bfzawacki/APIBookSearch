@@ -3,15 +3,19 @@ Uma API em Go que recebe requisições em uma URL, faz requisições para uma AP
 Um script em Python para fazer requisições a este serviço em Go, formatar as respostas e exibi-las.
 
 # Processo de desenvolvimento:
-
-# Dificuldades:
+Após utilizar o código base para a utilização da framework negroni, ver esse vídeo: (youtube.com/watch?v=reN_okp2Gq4) que fala sobre como funciona o OpenLibrary e consultar o código do criador do vídeo, comecei meu projeto. Fiz o desenvolvimento do arquivo API.go e runner.py. Consegui acessar a API e rodar runner.py para fazer algumas pesquisas de teste, porém, ainda não deixando o usuário digitar suas próprias querys. Eu também ainda não estava utilizando o Docker, que foi adicionado após o código estar funcionando adequadamente. Para fazer o docker funcionar, precisei fazer alterações e criar files novas. Alterei o código para permitir que o usuário digite querys, ajustei os comentários e apaguei algumas coisas não utilizadas mais.
 
 # Utilização de Ferramentas de IA:
+Para auxiliar na implementação desse projeto, foi utilizado a ferramenta GeminiAI. 
+Foi utilizado IA para a criação dos arquivos Docker (Dockerfile.api, Dockerfile.runner, entrypoint.sh) e para rodar o código também através dos comandos docker no terminal. Utilizar IA também facilitou muito para a detecção de problemas e erros no meu código.
+Além disso, o Gemini me ajudou a construir e corrigir várias partes do código da aplicação em Go da API e do runner em python, principalmente para a criação de structs e da lógica do arquivo da API (fica evidenciado pelos comentários em inglês).
 
 # Aprendizados
 Para entender um pouco melhor da linguagem Go, utilizei o projeto Golings (github.com/mauricioabreu/golings) de estudo. Fiz todos os exercícios propostos e procurei entender a resposta de cada um.
 Além disso, mesmo já tendo um pouco de experiência mexendo com arquivos json para fazer pesquisas, nunca havia feito isso sem ter os arquivos localmente em meu computador. Não possuía experiência em APIs ou com o framework negroni.
 Utilizei o Docker pela primeira vez e aprendi a sua funcionalidade e utilidade para projetos como esse. Nunca me preocupei com a portabilidade de aplicações já que não é algo necessário na maioria dos projetos da faculdade.
+
+# Dificuldades:
 
 # Compilação e execução:
 1.**Clonar o repositório**: 
