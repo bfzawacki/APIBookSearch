@@ -1,7 +1,5 @@
 # Pesquisa de livros utilizando Open Library Search
-Esta aplicação contém:
-Uma API em Go que recebe requisições em uma URL, faz requisições para uma API externa, e responde com um conjunto de informações obtidas.
-Um script em Python para fazer requisições a este serviço em Go, formatar as respostas e exibi-las.
+Esta aplicação contém uma API em Go que recebe requisições em uma URL, faz requisições para uma API externa, e responde com um conjunto de informações obtidas e um script em Python para fazer requisições a este serviço em Go, formatar as respostas e exibi-las.
 
 # Processo de desenvolvimento:
 Após utilizar o código base para a utilização da framework negroni, ver esse vídeo: (youtube.com/watch?v=reN_okp2Gq4) que fala sobre como funciona o OpenLibrary e consultar o código do criador do vídeo, comecei meu projeto. Fiz o desenvolvimento do arquivo API.go e runner.py. Consegui acessar a API e rodar runner.py para fazer algumas pesquisas de teste, porém, ainda não deixando o usuário digitar suas próprias querys. Eu também ainda não estava utilizando o Docker, que foi adicionado após o código estar funcionando adequadamente. Para fazer o docker funcionar, precisei fazer alterações e criar files novas. Alterei o código para permitir que o usuário digite querys, ajustei os comentários e apaguei algumas coisas não utilizadas mais.
